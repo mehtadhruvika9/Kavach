@@ -1,0 +1,6 @@
+{
+  "name": "Kavach by IndusInd",
+  "description": "Kavach by IndusInd - Mobile insurance and protection wallet integrated inside IndusInd Bank app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

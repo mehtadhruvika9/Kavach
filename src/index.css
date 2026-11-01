@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* IndusInd Bank colors and banking-grade scheme */
+  --color-brand-maroon: #8B1A1A;
+  --color-brand-maroon-dark: #6B1313;
+  --color-brand-maroon-light: #AD2525;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-pale: #FCF8E3;
+  --color-brand-gold-text: #8A6D3B;
+  
+  /* Additional UI elements */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* Custom premium styles */
+body {
+  font-family: var(--font-sans);
+  background-color: #f3f4f6;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Shimmer pulse effect for scan simulator */
+@keyframes scanning {
+  0% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+.scanning-line {
+  animation: scanning 3s ease-in-out infinite;
+}
+
+/* Pulse glow for AI badge */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 5px rgba(139, 26, 26, 0.2); }
+  50% { box-shadow: 0 0 15px rgba(139, 26, 26, 0.6); }
+}
+
+.ai-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
